@@ -12,7 +12,6 @@ body{font-family:'Inter',sans-serif;background:#f5f5f0;color:#1a1a1a;min-height:
 .app{max-width:740px;margin:0 auto;padding:28px 16px;}
 h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 .sub{font-size:13px;color:#888;margin-bottom:18px;}
-/* SYNC BAR */
 .syncbar{border-radius:8px;padding:11px 16px;margin-bottom:16px;font-size:13px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 .syncbar.disconnected{background:#fff3e0;border:1px solid #ffcc80;color:#e65100;}
 .syncbar.connected{background:#e8f5e9;border:1px solid #a5d6a7;color:#2e7d32;}
@@ -22,14 +21,10 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 .btnSync{border:none;border-radius:6px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;}
 .btnConnect{background:#0078d4;color:#fff;}
 .btnDisconnect{background:#e0e0e0;color:#444;}
-.spin{display:inline-block;animation:spin 1s linear infinite;}
-@keyframes spin{to{transform:rotate(360deg);}}
-/* INFO */
 .info{background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:11px 16px;margin-bottom:16px;font-size:13px;color:#2e7d32;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 .io{display:flex;align-items:center;gap:10px;}
 .imp-lbl{font-size:12px;font-weight:600;color:#2e7d32;cursor:pointer;text-decoration:underline;}
 .btnG{background:#2e7d32;color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;}
-/* STATS */
 .stats{display:flex;gap:10px;margin-bottom:14px;}
 .sc{flex:1;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:10px 14px;text-align:center;}
 .sn{font-size:26px;font-weight:700;color:#1565c0;line-height:1;}
@@ -37,17 +32,13 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 .sl{font-size:11px;color:#888;margin-top:2px;}
 .pw{background:#e0e0e0;border-radius:99px;height:7px;margin-bottom:16px;overflow:hidden;display:none;}
 .pb{height:100%;background:#1565c0;border-radius:99px;transition:width .4s;}
-/* MANAGE */
 .mtbtn{background:none;border:none;cursor:pointer;font-size:12px;color:#1565c0;font-weight:600;margin-bottom:12px;text-decoration:underline;display:block;}
 .msec{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:14px 18px;margin-bottom:10px;}
 .msec h3{font-size:12px;font-weight:600;color:#555;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;}
 .badd{background:#e3f2fd;border:1px solid #90caf9;color:#1565c0;border-radius:6px;padding:4px 12px;font-size:12px;font-weight:600;cursor:pointer;}
-.badd:hover{background:#bbdefb;}
 .tlist{display:flex;flex-wrap:wrap;gap:6px;min-height:20px;}
 .ti{display:flex;align-items:center;gap:4px;background:#e3f2fd;border:1px solid #90caf9;color:#1565c0;border-radius:99px;padding:3px 10px;font-size:12px;}
 .tdel{background:none;border:none;color:#90caf9;cursor:pointer;font-size:15px;padding:0 0 0 3px;line-height:1;}
-.tdel:hover{color:#c62828;}
-/* FORM */
 .fbox{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:20px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,.05);}
 .fbox h2{font-size:12px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;}
 .r1{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:10px;}
@@ -61,23 +52,16 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 .frow{display:flex;gap:6px;}
 .frow select{flex:1;}
 .bplus{background:#e3f2fd;border:1px solid #90caf9;color:#1565c0;border-radius:6px;padding:0 12px;font-size:22px;font-weight:700;cursor:pointer;height:36px;flex-shrink:0;}
-.bplus:hover{background:#bbdefb;}
 .bam{width:100%;padding:12px;background:#1565c0;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;margin-top:6px;}
-.bam:hover{background:#0d47a1;}
-/* FILTERS */
 .filt{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px;align-items:center;}
 .flbl{font-size:12px;color:#888;}
 .fb{padding:5px 13px;border-radius:99px;font-size:12px;font-weight:500;border:1px solid #d0d0d0;color:#666;background:#fff;cursor:pointer;}
-.fb:hover{background:#f0f0f0;}
 .fb.on{background:#1565c0;border-color:#1565c0;color:#fff;font-weight:600;}
-/* TASKS */
 .seclbl{font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
 .tl{display:flex;flex-direction:column;gap:8px;margin-bottom:18px;}
 .tc{background:#fff;border:1px solid #e0e0e0;border-radius:9px;padding:13px 14px;display:flex;align-items:flex-start;gap:11px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
-.tc:hover{border-color:#bdbdbd;}
 .tc.dc{opacity:.5;}
 .ckb{width:22px;height:22px;min-width:22px;margin-top:2px;border-radius:6px;border:2px solid #bdbdbd;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.ckb:hover{border-color:#1565c0;background:#e3f2fd;}
 .ckb.ck{background:#1565c0;border-color:#1565c0;}
 .ckb svg{display:none;}
 .ckb.ck svg{display:block;}
@@ -86,14 +70,8 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 .td{font-size:13px;color:#555;margin-bottom:6px;word-break:break-word;line-height:1.45;white-space:pre-wrap;}
 .tch{display:flex;flex-wrap:wrap;gap:5px;}
 .chip{font-size:11px;padding:2px 8px;border-radius:99px;font-weight:500;}
-.ch{background:#e8eaf6;color:#283593;}
-.cm{background:#fff3e0;color:#e65100;}
-.cH{background:#ffebee;color:#c62828;}
-.cB{background:#e8f5e9;color:#2e7d32;}
-.cd{background:#f3f4f6;color:#555;}
-.cl{background:#ffebee;color:#c62828;font-weight:700;}
-.cs{background:#fff8e1;color:#f57f17;}
-.cc{background:#fce4ec;color:#880e4f;}
+.ch{background:#e8eaf6;color:#283593;}.cm{background:#fff3e0;color:#e65100;}.cH{background:#ffebee;color:#c62828;}.cB{background:#e8f5e9;color:#2e7d32;}
+.cd{background:#f3f4f6;color:#555;}.cl{background:#ffebee;color:#c62828;font-weight:700;}.cs{background:#fff8e1;color:#f57f17;}.cc{background:#fce4ec;color:#880e4f;}
 .cross{text-decoration:line-through;color:#aaa;}
 .dbtn{width:26px;height:26px;min-width:26px;border:none;background:none;cursor:pointer;color:#ccc;border-radius:6px;display:flex;align-items:center;justify-content:center;}
 .dbtn:hover{background:#ffebee;color:#c62828;}
@@ -102,7 +80,6 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 .dtbtn{background:none;border:none;cursor:pointer;font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:6px;padding:4px 0;margin-bottom:10px;}
 .arr{transition:transform .2s;display:inline-block;}
 .arr.open{transform:rotate(90deg);}
-/* MODAL */
 .moverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center;padding:16px;}
 .moverlay.open{display:flex;}
 .mbox{background:#fff;border-radius:12px;padding:24px;max-width:380px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,.2);}
@@ -113,7 +90,6 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 .mbtns{display:flex;gap:10px;justify-content:flex-end;margin-top:16px;}
 .bcancel{background:#f5f5f5;border:1px solid #d0d0d0;color:#444;border-radius:7px;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;}
 .bconfirm{background:#1565c0;color:#fff;border:none;border-radius:7px;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;}
-.bconfirm:hover{background:#0d47a1;}
 @media(max-width:520px){.r2,.r3{grid-template-columns:1fr;}.stats{gap:6px;}}
 </style>
 </head>
@@ -122,7 +98,6 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
   <h1>&#10003; Check-Liste</h1>
   <p class="sub" id="Ddate"></p>
 
-  <!-- BARRE DE SYNC ONEDRIVE -->
   <div class="syncbar disconnected" id="syncBar">
     <span id="syncMsg">☁️ Non connecté à OneDrive</span>
     <div class="sio">
@@ -131,7 +106,6 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
     </div>
   </div>
 
-  <!-- EXPORT/IMPORT LOCAL (backup) -->
   <div class="info">
     <span><strong>&#128190; Sauvegarde locale</strong> &mdash; backup en cas de déconnexion.</span>
     <div class="io">
@@ -147,7 +121,6 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
   </div>
   <div class="pw" id="pw"><div class="pb" id="pb" style="width:0%"></div></div>
 
-  <!-- GESTION -->
   <button class="mtbtn" onclick="toggleManage()">&#9881; Gérer les établissements et catégories</button>
   <div id="manPanel" style="display:none">
     <div class="msec">
@@ -160,48 +133,22 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
     </div>
   </div>
 
-  <!-- FORMULAIRE -->
   <div class="fbox">
     <h2>+ Nouvelle tâche</h2>
-    <div class="r1"><div class="fd">
-      <label>Titre *</label>
-      <input type="text" id="fTitle" placeholder="Ex : Facturation Novotel, Uniformes…">
-    </div></div>
-    <div class="r1"><div class="fd">
-      <label>Description</label>
-      <textarea id="fDesc" placeholder="Détails, étapes… (optionnel)"></textarea>
-    </div></div>
+    <div class="r1"><div class="fd"><label>Titre *</label><input type="text" id="fTitle" placeholder="Ex : Facturation Novotel, Uniformes…"></div></div>
+    <div class="r1"><div class="fd"><label>Description</label><textarea id="fDesc" placeholder="Détails, étapes… (optionnel)"></textarea></div></div>
     <div class="r2">
-      <div class="fd">
-        <label>Établissement</label>
-        <div class="frow">
-          <select id="fHotel"><option value="">— Sélectionner —</option></select>
-          <button class="bplus" onclick="openModal('hotel')" title="Ajouter un établissement">+</button>
-        </div>
-      </div>
-      <div class="fd">
-        <label>Catégorie</label>
-        <div class="frow">
-          <select id="fCat"><option value="">— Sélectionner —</option></select>
-          <button class="bplus" onclick="openModal('cat')" title="Ajouter une catégorie">+</button>
-        </div>
-      </div>
+      <div class="fd"><label>Établissement</label><div class="frow"><select id="fHotel"><option value="">— Sélectionner —</option></select><button class="bplus" onclick="openModal('hotel')">+</button></div></div>
+      <div class="fd"><label>Catégorie</label><div class="frow"><select id="fCat"><option value="">— Sélectionner —</option></select><button class="bplus" onclick="openModal('cat')">+</button></div></div>
     </div>
     <div class="r3">
-      <div class="fd"><label>Priorité</label>
-        <select id="fPri">
-          <option value="moyenne">Moyenne</option>
-          <option value="haute">Haute !</option>
-          <option value="basse">Basse</option>
-        </select>
-      </div>
+      <div class="fd"><label>Priorité</label><select id="fPri"><option value="moyenne">Moyenne</option><option value="haute">Haute !</option><option value="basse">Basse</option></select></div>
       <div class="fd"><label>Date d'ajout</label><input type="date" id="fStart"></div>
       <div class="fd"><label>Échéance</label><input type="date" id="fDue"></div>
     </div>
     <button class="bam" onclick="addTask()">+ Ajouter la tâche</button>
   </div>
 
-  <!-- FILTRES -->
   <div class="filt">
     <span class="flbl">Filtrer :</span>
     <button class="fb on" onclick="setF('actives',this)">À faire</button>
@@ -217,17 +164,12 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d0d0d0" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 12l2 2 4-4"/></svg>
     <p id="emptyTxt">Aucune tâche. Ajoutez-en une ci-dessus !</p>
   </div>
-
   <div id="doneSection" style="display:none">
-    <button class="dtbtn" onclick="toggleDoneList()">
-      <span class="arr" id="doneArr">&#9654;</span>
-      Tâches terminées — <span id="doneCount">0</span>
-    </button>
+    <button class="dtbtn" onclick="toggleDoneList()"><span class="arr" id="doneArr">&#9654;</span> Tâches terminées — <span id="doneCount">0</span></button>
     <div class="tl" id="listDone" style="display:none"></div>
   </div>
 </div>
 
-<!-- MODAL -->
 <div class="moverlay" id="moverlay" onclick="if(event.target===this)closeModal()">
   <div class="mbox">
     <h3 id="mTitle">Ajouter</h3>
@@ -241,65 +183,58 @@ h1{font-size:22px;font-weight:700;margin-bottom:4px;}
 </div>
 
 <script>
-// ============================================================
-// CONFIGURATION — remplacez uniquement CLIENT_ID si nécessaire
-// ============================================================
-var CLIENT_ID = '41839e56-23cc-4d18-ade7-60a0ce427826';
-var ONEDRIVE_FILE = '/me/drive/root:/ChecklistApp/checklist-data.json:/content';
-var SCOPES = ['Files.ReadWrite', 'User.Read'];
+// ── CONFIG ──────────────────────────────────────────────────
+var CLIENT_ID    = '41839e56-23cc-4d18-ade7-60a0ce427826';
+var REDIRECT_URI = 'https://eievard.github.io/checklist';
+var ONEDRIVE_FILE= '/me/drive/root:/ChecklistApp/checklist-data.json:/content';
+var SCOPES       = ['Files.ReadWrite', 'User.Read'];
 
-// ============================================================
-// MSAL — Authentification Microsoft
-// ============================================================
+// ── MSAL ────────────────────────────────────────────────────
 var msalApp = new msal.PublicClientApplication({
   auth: {
     clientId: CLIENT_ID,
-    authority: 'https://login.microsoftonline.com/common',
-    redirectUri: window.location.href.split('?')[0].split('#')[0]
+    authority: 'https://login.microsoftonline.com/consumers',
+    redirectUri: REDIRECT_URI,
+    navigateToLoginRequestUrl: false
   },
-  cache: { cacheLocation: 'localStorage', storeAuthStateInCookie: true }
-});
-
-var odAccount = null;
-var syncPending = false;
-var syncTimer = null;
-
-// Vérifier si déjà connecté au démarrage
-msalApp.handleRedirectPromise().then(function(resp) {
-  if (resp && resp.account) {
-    odAccount = resp.account;
-    onConnected();
-  } else {
-    var accounts = msalApp.getAllAccounts();
-    if (accounts.length > 0) {
-      odAccount = accounts[0];
-      onConnected();
-    }
+  cache: {
+    cacheLocation: 'localStorage',
+    storeAuthStateInCookie: true   // CRUCIAL pour Safari iOS
   }
-}).catch(function(e) {
-  console.error('MSAL redirect error', e);
 });
+
+var odAccount = null, syncTimer = null;
+
+// Récupère le résultat de la redirection Microsoft au rechargement de la page
+msalApp.handleRedirectPromise()
+  .then(function(resp) {
+    if (resp && resp.account) {
+      odAccount = resp.account;
+      onConnected();
+    } else {
+      var accounts = msalApp.getAllAccounts();
+      if (accounts.length > 0) { odAccount = accounts[0]; onConnected(); }
+    }
+  })
+  .catch(function(e) {
+    console.error('MSAL error', e);
+    setSyncBar('error', '❌ Erreur : ' + (e.errorCode || e.message));
+  });
 
 function connectOneDrive() {
-  msalApp.loginPopup({ scopes: SCOPES }).then(function(resp) {
-    odAccount = resp.account;
-    onConnected();
-  }).catch(function(e) {
-    setSyncBar('error', '❌ Connexion annulée ou échouée.');
-    console.error(e);
-  });
+  setSyncBar('syncing', '🔄 Redirection vers Microsoft…');
+  setTimeout(function() {
+    msalApp.loginRedirect({
+      scopes: SCOPES,
+      redirectUri: REDIRECT_URI,
+      prompt: 'select_account'
+    });
+  }, 200);
 }
 
 function disconnectOneDrive() {
   if (!confirm('Se déconnecter de OneDrive ?')) return;
-  msalApp.logoutPopup({ account: odAccount }).then(function() {
-    odAccount = null;
-    setSyncBar('disconnected', '☁️ Non connecté à OneDrive');
-    document.getElementById('syncUser').textContent = '';
-    document.getElementById('syncBtn').textContent = 'Se connecter';
-    document.getElementById('syncBtn').onclick = connectOneDrive;
-    document.getElementById('syncBtn').className = 'btnSync btnConnect';
-  });
+  msalApp.logoutRedirect({ account: odAccount, postLogoutRedirectUri: REDIRECT_URI });
 }
 
 function onConnected() {
@@ -313,340 +248,130 @@ function onConnected() {
 
 async function getToken() {
   try {
-    var resp = await msalApp.acquireTokenSilent({ scopes: SCOPES, account: odAccount });
-    return resp.accessToken;
+    var r = await msalApp.acquireTokenSilent({ scopes: SCOPES, account: odAccount });
+    return r.accessToken;
   } catch(e) {
-    var resp = await msalApp.acquireTokenPopup({ scopes: SCOPES, account: odAccount });
-    return resp.accessToken;
+    msalApp.acquireTokenRedirect({ scopes: SCOPES, redirectUri: REDIRECT_URI });
+    return null;
   }
 }
 
 async function loadFromOneDrive() {
   try {
-    var token = await getToken();
-    var resp = await fetch('https://graph.microsoft.com/v1.0' + ONEDRIVE_FILE, {
-      headers: { 'Authorization': 'Bearer ' + token }
-    });
-    if (resp.status === 404) {
-      // Fichier inexistant — première utilisation, on sauvegarde les données locales
-      setSyncBar('connected', '✅ OneDrive connecté — premier enregistrement…');
-      await saveToOneDrive();
-      return;
-    }
+    var token = await getToken(); if (!token) return;
+    var resp = await fetch('https://graph.microsoft.com/v1.0' + ONEDRIVE_FILE, { headers: { 'Authorization': 'Bearer ' + token } });
+    if (resp.status === 404) { setSyncBar('connected','✅ OneDrive connecté — premier enregistrement…'); await saveToOneDrive(); return; }
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     var d = await resp.json();
-    tasks = d.tasks || [];
-    nextId = d.nextId || 1;
-    hotels = d.hotels || hotels;
-    cats = d.cats || cats;
-    saveLocal();
-    buildUI(); render();
-    setSyncBar('connected', '✅ Synchronisé avec OneDrive');
-  } catch(e) {
-    console.error('Erreur chargement OneDrive', e);
-    setSyncBar('error', '⚠️ Impossible de charger depuis OneDrive — données locales utilisées.');
-  }
+    tasks=d.tasks||[]; nextId=d.nextId||1; hotels=d.hotels||hotels; cats=d.cats||cats;
+    saveLocal(); buildUI(); render();
+    setSyncBar('connected','✅ Synchronisé avec OneDrive');
+  } catch(e) { console.error(e); setSyncBar('error','⚠️ Chargement OneDrive échoué — données locales utilisées.'); }
 }
 
 async function saveToOneDrive() {
   if (!odAccount) return;
   try {
-    var token = await getToken();
-    var data = JSON.stringify({ tasks: tasks, nextId: nextId, hotels: hotels, cats: cats, savedAt: new Date().toISOString() }, null, 2);
-    var resp = await fetch('https://graph.microsoft.com/v1.0' + ONEDRIVE_FILE, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'Bearer ' + token,
-        'Content-Type': 'application/json'
-      },
-      body: data
-    });
+    var token = await getToken(); if (!token) return;
+    var body = JSON.stringify({tasks,nextId,hotels,cats,savedAt:new Date().toISOString()},null,2);
+    var resp = await fetch('https://graph.microsoft.com/v1.0' + ONEDRIVE_FILE, { method:'PUT', headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json'}, body });
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    setSyncBar('connected', '✅ Synchronisé — ' + new Date().toLocaleTimeString('fr-FR', {hour:'2-digit',minute:'2-digit'}));
-  } catch(e) {
-    console.error('Erreur sauvegarde OneDrive', e);
-    setSyncBar('error', '⚠️ Sauvegarde OneDrive échouée — données conservées localement.');
-  }
+    setSyncBar('connected','✅ Synchronisé — '+new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}));
+  } catch(e) { console.error(e); setSyncBar('error','⚠️ Sauvegarde OneDrive échouée.'); }
 }
 
-// Sauvegarde différée : attend 1,5s après la dernière action avant d'écrire sur OneDrive
-function scheduleSave() {
-  saveLocal();
-  if (!odAccount) return;
-  setSyncBar('syncing', '🔄 Sauvegarde…');
-  clearTimeout(syncTimer);
-  syncTimer = setTimeout(function() { saveToOneDrive(); }, 1500);
-}
-
-function setSyncBar(state, msg) {
-  var bar = document.getElementById('syncBar');
-  bar.className = 'syncbar ' + state;
-  document.getElementById('syncMsg').textContent = msg;
-}
-
-// ============================================================
-// DONNÉES LOCALES (localStorage — fallback)
-// ============================================================
-var tasks = [], nextId = 1;
-var hotels = ['Hotel Mercure', 'Hotel Novotel'];
-var cats = ['Facturation', 'RH', 'Opérations', 'Admin', 'Maintenance'];
-var KEY = 'cl_v7', fA = 'actives', fH = '', dOpen = false, mCtx = '';
-var manOpen = false;
-
-function loadLocal() {
-  try {
-    var r = localStorage.getItem(KEY);
-    if (r) {
-      var d = JSON.parse(r);
-      tasks = d.tasks || [];
-      nextId = d.nextId || 1;
-      hotels = d.hotels || hotels;
-      cats = d.cats || cats;
-    }
-  } catch(e) {}
-}
-
-function saveLocal() {
-  try {
-    localStorage.setItem(KEY, JSON.stringify({ tasks: tasks, nextId: nextId, hotels: hotels, cats: cats }));
-  } catch(e) {}
-}
-
-// Alias utilisé partout dans le code — sauvegarde local + OneDrive
+function scheduleSave() { saveLocal(); if(!odAccount)return; setSyncBar('syncing','🔄 Sauvegarde…'); clearTimeout(syncTimer); syncTimer=setTimeout(saveToOneDrive,1500); }
+function setSyncBar(state,msg) { document.getElementById('syncBar').className='syncbar '+state; document.getElementById('syncMsg').textContent=msg; }
 function save() { scheduleSave(); }
 
-// ============================================================
-// UI
-// ============================================================
-function esc(s) {
-  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+// ── DONNÉES LOCALES ─────────────────────────────────────────
+var tasks=[],nextId=1;
+var hotels=['Hotel Mercure','Hotel Novotel'];
+var cats=['Facturation','RH','Opérations','Admin','Maintenance'];
+var KEY='cl_v7',fA='actives',fH='',dOpen=false,mCtx='',manOpen=false;
+
+function loadLocal(){try{var r=localStorage.getItem(KEY);if(r){var d=JSON.parse(r);tasks=d.tasks||[];nextId=d.nextId||1;hotels=d.hotels||hotels;cats=d.cats||cats;}}catch(e){}}
+function saveLocal(){try{localStorage.setItem(KEY,JSON.stringify({tasks,nextId,hotels,cats}));}catch(e){}}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+
+function fillSel(id,list,ph){var s=document.getElementById(id),cur=s.value;s.innerHTML='<option value="">'+ph+'</option>';list.forEach(function(v){s.innerHTML+='<option value="'+esc(v)+'"'+(v===cur?' selected':'')+'>'+esc(v)+'</option>';});}
+
+function buildUI(){
+  fillSel('fHotel',hotels,'— Établissement —'); fillSel('fCat',cats,'— Catégorie —');
+  var ht=document.getElementById('hotelTags');
+  ht.innerHTML=hotels.length?hotels.map(function(v,i){return '<span class="ti">'+esc(v)+'<button class="tdel" data-type="hotel" data-idx="'+i+'">&#10005;</button></span>';}).join(''):'<span style="font-size:12px;color:#aaa">Aucun.</span>';
+  var ct=document.getElementById('catTags');
+  ct.innerHTML=cats.length?cats.map(function(v,i){return '<span class="ti">'+esc(v)+'<button class="tdel" data-type="cat" data-idx="'+i+'">&#10005;</button></span>';}).join(''):'<span style="font-size:12px;color:#aaa">Aucune.</span>';
+  document.getElementById('hotelTags').onclick=function(e){var b=e.target.closest('.tdel');if(b)delItem(b.getAttribute('data-type'),parseInt(b.getAttribute('data-idx')));};
+  document.getElementById('catTags').onclick=function(e){var b=e.target.closest('.tdel');if(b)delItem(b.getAttribute('data-type'),parseInt(b.getAttribute('data-idx')));};
+  var hf=document.getElementById('hotelFilt');
+  if(!hotels.length){hf.style.display='none';return;}
+  hf.style.display='';
+  var html='<span class="flbl">Hôtel :</span><button class="fb'+(fH===''?' on':'')+'" data-hotel="">Tous</button>';
+  hotels.forEach(function(h){html+='<button class="fb'+(fH===h?' on':'')+'" data-hotel="'+esc(h)+'">'+esc(h)+'</button>';});
+  hf.innerHTML=html;
+  hf.onclick=function(e){var b=e.target.closest('.fb');if(!b)return;fH=b.getAttribute('data-hotel');document.querySelectorAll('#hotelFilt .fb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');render();};
 }
 
-function fillSel(id, list, ph) {
-  var s = document.getElementById(id), cur = s.value;
-  s.innerHTML = '<option value="">' + ph + '</option>';
-  list.forEach(function(v) {
-    s.innerHTML += '<option value="' + esc(v) + '"' + (v === cur ? ' selected' : '') + '>' + esc(v) + '</option>';
-  });
-}
-
-function buildUI() {
-  fillSel('fHotel', hotels, '— Établissement —');
-  fillSel('fCat', cats, '— Catégorie —');
-
-  var ht = document.getElementById('hotelTags');
-  ht.innerHTML = hotels.length
-    ? hotels.map(function(v,i){ return '<span class="ti">'+esc(v)+'<button class="tdel" data-type="hotel" data-idx="'+i+'" title="Supprimer">&#10005;</button></span>'; }).join('')
-    : '<span style="font-size:12px;color:#aaa">Aucun.</span>';
-
-  var ct = document.getElementById('catTags');
-  ct.innerHTML = cats.length
-    ? cats.map(function(v,i){ return '<span class="ti">'+esc(v)+'<button class="tdel" data-type="cat" data-idx="'+i+'" title="Supprimer">&#10005;</button></span>'; }).join('')
-    : '<span style="font-size:12px;color:#aaa">Aucune.</span>';
-
-  document.getElementById('hotelTags').onclick = function(e) {
-    var btn = e.target.closest('.tdel');
-    if (btn) delItem(btn.getAttribute('data-type'), parseInt(btn.getAttribute('data-idx')));
-  };
-  document.getElementById('catTags').onclick = function(e) {
-    var btn = e.target.closest('.tdel');
-    if (btn) delItem(btn.getAttribute('data-type'), parseInt(btn.getAttribute('data-idx')));
-  };
-
-  var hf = document.getElementById('hotelFilt');
-  if (!hotels.length) { hf.style.display = 'none'; return; }
-  hf.style.display = '';
-  var html = '<span class="flbl">Hôtel :</span><button class="fb'+(fH===''?' on':'')+'" data-hotel="">Tous</button>';
-  hotels.forEach(function(h) {
-    html += '<button class="fb'+(fH===h?' on':'')+'" data-hotel="'+esc(h)+'">'+esc(h)+'</button>';
-  });
-  hf.innerHTML = html;
-  hf.onclick = function(e) {
-    var btn = e.target.closest('.fb');
-    if (!btn) return;
-    fH = btn.getAttribute('data-hotel');
-    document.querySelectorAll('#hotelFilt .fb').forEach(function(b){ b.classList.remove('on'); });
-    btn.classList.add('on');
-    render();
-  };
-}
-
-function openModal(ctx) {
-  mCtx = ctx;
-  var isH = ctx === 'hotel';
-  document.getElementById('mTitle').textContent = isH ? 'Ajouter un établissement' : 'Ajouter une catégorie';
-  document.getElementById('mDesc').textContent = isH ? "Saisissez le nom de l'établissement." : 'Saisissez le nom de la nouvelle catégorie.';
-  document.getElementById('mInput').placeholder = isH ? 'Ex : Hotel Ibis...' : 'Ex : Commercial...';
-  document.getElementById('mInput').value = '';
-  document.getElementById('moverlay').classList.add('open');
-  setTimeout(function(){ document.getElementById('mInput').focus(); }, 60);
-}
-function closeModal(){ document.getElementById('moverlay').classList.remove('open'); }
-function confirmModal(){
-  var v = document.getElementById('mInput').value.trim();
-  if (!v){ document.getElementById('mInput').focus(); return; }
-  if (mCtx === 'hotel'){ if (hotels.indexOf(v) === -1) hotels.push(v); }
-  else { if (cats.indexOf(v) === -1) cats.push(v); }
-  save(); buildUI(); closeModal();
-}
-document.getElementById('mInput').addEventListener('keypress', function(e){ if(e.key==='Enter') confirmModal(); });
-
-function delItem(type, i){
-  if (!confirm('Supprimer ?')) return;
-  if (type === 'hotel') hotels.splice(i,1); else cats.splice(i,1);
-  save(); buildUI();
-}
-
-function toggleManage(){
-  manOpen = !manOpen;
-  document.getElementById('manPanel').style.display = manOpen ? '' : 'none';
-}
+function openModal(ctx){mCtx=ctx;var isH=ctx==='hotel';document.getElementById('mTitle').textContent=isH?'Ajouter un établissement':'Ajouter une catégorie';document.getElementById('mDesc').textContent=isH?"Saisissez le nom de l'établissement.":'Saisissez le nom de la nouvelle catégorie.';document.getElementById('mInput').placeholder=isH?'Ex : Hotel Ibis...':'Ex : Commercial...';document.getElementById('mInput').value='';document.getElementById('moverlay').classList.add('open');setTimeout(function(){document.getElementById('mInput').focus();},60);}
+function closeModal(){document.getElementById('moverlay').classList.remove('open');}
+function confirmModal(){var v=document.getElementById('mInput').value.trim();if(!v){document.getElementById('mInput').focus();return;}if(mCtx==='hotel'){if(hotels.indexOf(v)===-1)hotels.push(v);}else{if(cats.indexOf(v)===-1)cats.push(v);}save();buildUI();closeModal();}
+document.getElementById('mInput').addEventListener('keypress',function(e){if(e.key==='Enter')confirmModal();});
+function delItem(type,i){if(!confirm('Supprimer ?'))return;if(type==='hotel')hotels.splice(i,1);else cats.splice(i,1);save();buildUI();}
+function toggleManage(){manOpen=!manOpen;document.getElementById('manPanel').style.display=manOpen?'':'none';}
 
 function addTask(){
-  var title = document.getElementById('fTitle').value.trim();
-  if (!title){
-    var inp = document.getElementById('fTitle');
-    inp.style.borderColor = '#f44336'; inp.focus();
-    setTimeout(function(){ inp.style.borderColor=''; }, 2000);
-    return;
-  }
-  tasks.unshift({
-    id: nextId++, title: title,
-    desc: document.getElementById('fDesc').value.trim(),
-    hotel: document.getElementById('fHotel').value,
-    cat: document.getElementById('fCat').value,
-    pri: document.getElementById('fPri').value,
-    start: document.getElementById('fStart').value || '',
-    due: document.getElementById('fDue').value || '',
-    done: false, created: new Date().toISOString()
-  });
-  save();
-  document.getElementById('fTitle').value='';
-  document.getElementById('fDesc').value='';
-  document.getElementById('fDue').value='';
-  render();
+  var title=document.getElementById('fTitle').value.trim();
+  if(!title){var inp=document.getElementById('fTitle');inp.style.borderColor='#f44336';inp.focus();setTimeout(function(){inp.style.borderColor='';},2000);return;}
+  tasks.unshift({id:nextId++,title,desc:document.getElementById('fDesc').value.trim(),hotel:document.getElementById('fHotel').value,cat:document.getElementById('fCat').value,pri:document.getElementById('fPri').value,start:document.getElementById('fStart').value||'',due:document.getElementById('fDue').value||'',done:false,created:new Date().toISOString()});
+  save();document.getElementById('fTitle').value='';document.getElementById('fDesc').value='';document.getElementById('fDue').value='';render();
 }
 
-function toggleDone(id){
-  for(var i=0;i<tasks.length;i++){
-    if(tasks[i].id===id){ tasks[i].done=!tasks[i].done; if(tasks[i].done) tasks[i].completedAt=new Date().toISOString(); break; }
-  }
-  save(); render();
-}
-function delTask(id){
-  if(!confirm('Supprimer cette tâche ?')) return;
-  tasks=tasks.filter(function(t){ return t.id!==id; });
-  save(); render();
-}
-
-function setF(f,btn){
-  fA=f;
-  document.querySelectorAll('.filt > .fb').forEach(function(b){ b.classList.remove('on'); });
-  btn.classList.add('on'); render();
-}
+function toggleDone(id){for(var i=0;i<tasks.length;i++){if(tasks[i].id===id){tasks[i].done=!tasks[i].done;if(tasks[i].done)tasks[i].completedAt=new Date().toISOString();break;}}save();render();}
+function delTask(id){if(!confirm('Supprimer cette tâche ?'))return;tasks=tasks.filter(function(t){return t.id!==id;});save();render();}
+function setF(f,btn){fA=f;document.querySelectorAll('.filt > .fb').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');render();}
 
 function render(){
-  var today=new Date(); today.setHours(0,0,0,0);
-  var active=tasks.filter(function(t){ return !t.done; });
-  var done=tasks.filter(function(t){ return t.done; });
-  document.getElementById('nTodo').textContent=active.length;
-  document.getElementById('nDone').textContent=done.length;
-  document.getElementById('nTotal').textContent=tasks.length;
-  var pw=document.getElementById('pw');
-  if(tasks.length>0){ pw.style.display=''; document.getElementById('pb').style.width=Math.round(done.length/tasks.length*100)+'%'; }
-  else pw.style.display='none';
-
+  var today=new Date();today.setHours(0,0,0,0);
+  var active=tasks.filter(function(t){return !t.done;}),done=tasks.filter(function(t){return t.done;});
+  document.getElementById('nTodo').textContent=active.length;document.getElementById('nDone').textContent=done.length;document.getElementById('nTotal').textContent=tasks.length;
+  var pw=document.getElementById('pw');if(tasks.length>0){pw.style.display='';document.getElementById('pb').style.width=Math.round(done.length/tasks.length*100)+'%';}else pw.style.display='none';
   var shown;
-  if(fA==='toutes') shown=tasks.slice();
-  else if(fA==='haute') shown=active.filter(function(t){ return t.pri==='haute'; });
-  else if(fA==='echeance') shown=active.filter(function(t){
-    if(!t.due) return false;
-    var d=new Date(t.due+'T00:00:00'); d.setHours(0,0,0,0);
-    return (d-today)/86400000<=3;
-  });
+  if(fA==='toutes')shown=tasks.slice();
+  else if(fA==='haute')shown=active.filter(function(t){return t.pri==='haute';});
+  else if(fA==='echeance')shown=active.filter(function(t){if(!t.due)return false;var d=new Date(t.due+'T00:00:00');d.setHours(0,0,0,0);return(d-today)/86400000<=3;});
   else shown=active.slice();
-
-  if(fH) shown=shown.filter(function(t){ return t.hotel===fH; });
-
+  if(fH)shown=shown.filter(function(t){return t.hotel===fH;});
   var tmap={actives:'À faire',haute:'Urgentes',echeance:'Échéance ≤3j',toutes:'Toutes'};
   document.getElementById('secLbl').textContent=(tmap[fA]||'Tâches')+(fH?' – '+fH:'')+' — '+shown.length;
-
-  var la=document.getElementById('listActive'), em=document.getElementById('emptyMsg');
-  if(!shown.length){
-    la.innerHTML=''; em.style.display='';
-    document.getElementById('emptyTxt').textContent=(fA==='actives'&&!fH&&done.length>0)?'Toutes les tâches sont terminées ! 🎉':'Aucune tâche pour ce filtre.';
-  } else {
-    em.style.display='none';
-    la.innerHTML=shown.map(function(t){ return tHTML(t,today); }).join('');
-  }
+  var la=document.getElementById('listActive'),em=document.getElementById('emptyMsg');
+  if(!shown.length){la.innerHTML='';em.style.display='';document.getElementById('emptyTxt').textContent=(fA==='actives'&&!fH&&done.length>0)?'Toutes les tâches sont terminées ! 🎉':'Aucune tâche pour ce filtre.';}
+  else{em.style.display='none';la.innerHTML=shown.map(function(t){return tHTML(t,today);}).join('');}
   var ds=document.getElementById('doneSection');
-  if(done.length>0){
-    ds.style.display=''; document.getElementById('doneCount').textContent=done.length;
-    if(dOpen) document.getElementById('listDone').innerHTML=done.map(function(t){ return tHTML(t,today); }).join('');
-  } else ds.style.display='none';
+  if(done.length>0){ds.style.display='';document.getElementById('doneCount').textContent=done.length;if(dOpen)document.getElementById('listDone').innerHTML=done.map(function(t){return tHTML(t,today);}).join('');}
+  else ds.style.display='none';
 }
 
 function tHTML(t,today){
   var chips='';
-  if(t.hotel) chips+='<span class="chip ch">&#127963; '+esc(t.hotel)+'</span>';
-  var pc={haute:'cH',moyenne:'cm',basse:'cB'}, pl={haute:'! Haute',moyenne:'Moyenne',basse:'Basse'};
+  if(t.hotel)chips+='<span class="chip ch">&#127963; '+esc(t.hotel)+'</span>';
+  var pc={haute:'cH',moyenne:'cm',basse:'cB'},pl={haute:'! Haute',moyenne:'Moyenne',basse:'Basse'};
   chips+='<span class="chip '+pc[t.pri]+'">'+pl[t.pri]+'</span>';
-  if(t.cat) chips+='<span class="chip cc">'+esc(t.cat)+'</span>';
-  if(t.start){ var sd=new Date(t.start+'T00:00:00'); chips+='<span class="chip cd">&#128337; '+sd.toLocaleDateString('fr-FR',{day:'numeric',month:'short'})+'</span>'; }
-  if(t.due){
-    var d=new Date(t.due+'T00:00:00'); d.setHours(0,0,0,0);
-    var diff=(d-today)/86400000;
-    var dc=diff<0?'cl':diff<=2?'cs':'cd';
-    var dp=diff<0?'&#9888; Retard ':'&#128197; ';
-    chips+='<span class="chip '+dc+'">'+dp+d.toLocaleDateString('fr-FR',{day:'numeric',month:'short'})+'</span>';
-  }
-  var isDone=t.done, cc=isDone?'tc dc':'tc', ck=isDone?'ckb ck':'ckb';
-  return '<div class="'+cc+'">'
-    +'<button class="'+ck+'" onclick="toggleDone('+t.id+')" title="'+(isDone?'Rouvrir':'Marquer comme fait')+'">'
-    +'<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>'
-    +'</button>'
-    +'<div class="tb">'
-    +'<div class="tt'+(isDone?' cross':'')+'">' +esc(t.title)+'</div>'
-    +(t.desc?'<div class="td'+(isDone?' cross':'')+'">'+esc(t.desc)+'</div>':'')
-    +'<div class="tch">'+chips+'</div>'
-    +'</div>'
-    +'<button class="dbtn" onclick="delTask('+t.id+')" title="Supprimer">'
-    +'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>'
-    +'</button></div>';
+  if(t.cat)chips+='<span class="chip cc">'+esc(t.cat)+'</span>';
+  if(t.start){var sd=new Date(t.start+'T00:00:00');chips+='<span class="chip cd">&#128337; '+sd.toLocaleDateString('fr-FR',{day:'numeric',month:'short'})+'</span>';}
+  if(t.due){var d=new Date(t.due+'T00:00:00');d.setHours(0,0,0,0);var diff=(d-today)/86400000,dc=diff<0?'cl':diff<=2?'cs':'cd',dp=diff<0?'&#9888; Retard ':'&#128197; ';chips+='<span class="chip '+dc+'">'+dp+d.toLocaleDateString('fr-FR',{day:'numeric',month:'short'})+'</span>';}
+  var isDone=t.done,cc=isDone?'tc dc':'tc',ck=isDone?'ckb ck':'ckb';
+  return '<div class="'+cc+'"><button class="'+ck+'" onclick="toggleDone('+t.id+')" title="'+(isDone?'Rouvrir':'Marquer comme fait')+'"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></button><div class="tb"><div class="tt'+(isDone?' cross':'')+'">'+esc(t.title)+'</div>'+(t.desc?'<div class="td'+(isDone?' cross':'')+'">'+esc(t.desc)+'</div>':'')+'<div class="tch">'+chips+'</div></div><button class="dbtn" onclick="delTask('+t.id+')" title="Supprimer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg></button></div>';
 }
 
-function toggleDoneList(){
-  dOpen=!dOpen;
-  document.getElementById('doneArr').classList.toggle('open',dOpen);
-  document.getElementById('listDone').style.display=dOpen?'':'none';
-  if(dOpen){ var dn=tasks.filter(function(t){ return t.done; }); var td=new Date(); td.setHours(0,0,0,0); document.getElementById('listDone').innerHTML=dn.map(function(t){ return tHTML(t,td); }).join(''); }
-}
+function toggleDoneList(){dOpen=!dOpen;document.getElementById('doneArr').classList.toggle('open',dOpen);document.getElementById('listDone').style.display=dOpen?'':'none';if(dOpen){var dn=tasks.filter(function(t){return t.done;});var td=new Date();td.setHours(0,0,0,0);document.getElementById('listDone').innerHTML=dn.map(function(t){return tHTML(t,td);}).join('');}}
+function exportJSON(){var blob=new Blob([JSON.stringify({tasks,nextId,hotels,cats,exportedAt:new Date().toISOString()},null,2)],{type:'application/json'});var url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='checklist-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);}
+function importJSON(inp){var file=inp.files[0];if(!file)return;var reader=new FileReader();reader.onload=function(e){try{var d=JSON.parse(e.target.result);if(!Array.isArray(d.tasks)){alert('Fichier invalide.');return;}if(!confirm('Remplacer toutes les données ?'))return;tasks=d.tasks;nextId=d.nextId||1;hotels=d.hotels||hotels;cats=d.cats||cats;save();buildUI();render();}catch(ex){alert('Impossible de lire ce fichier.');}};reader.readAsText(file);inp.value='';}
 
-function exportJSON(){
-  var blob=new Blob([JSON.stringify({tasks:tasks,nextId:nextId,hotels:hotels,cats:cats,exportedAt:new Date().toISOString()},null,2)],{type:'application/json'});
-  var url=URL.createObjectURL(blob), a=document.createElement('a');
-  a.href=url; a.download='checklist-'+new Date().toISOString().slice(0,10)+'.json';
-  document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
-}
-function importJSON(inp){
-  var file=inp.files[0]; if(!file) return;
-  var reader=new FileReader();
-  reader.onload=function(e){
-    try{
-      var d=JSON.parse(e.target.result);
-      if(!Array.isArray(d.tasks)){ alert('Fichier invalide.'); return; }
-      if(!confirm('Remplacer toutes les données ?')) return;
-      tasks=d.tasks; nextId=d.nextId||1; hotels=d.hotels||hotels; cats=d.cats||cats;
-      save(); buildUI(); render();
-    } catch(ex){ alert('Impossible de lire ce fichier.'); }
-  };
-  reader.readAsText(file); inp.value='';
-}
-
-// INIT
-document.getElementById('fTitle').addEventListener('keypress', function(e){ if(e.key==='Enter'){ e.preventDefault(); addTask(); } });
-document.getElementById('Ddate').textContent = new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-document.getElementById('fStart').value = new Date().toISOString().slice(0,10);
+// ── INIT ─────────────────────────────────────────────────────
+document.getElementById('fTitle').addEventListener('keypress',function(e){if(e.key==='Enter'){e.preventDefault();addTask();}});
+document.getElementById('Ddate').textContent=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+document.getElementById('fStart').value=new Date().toISOString().slice(0,10);
 loadLocal(); buildUI(); render();
 </script>
 </body>
